@@ -8,13 +8,12 @@ const product = (str) => {
  // let str = num.toString();
   let prod = 1;
   let store = [];
-  let count = 4;
+  let count = 13; // number of adjacent digits
 
-  let length = str.length - 3; //
+  let length = str.length - 12; // how many times i will loop 1000 - 13 + 1
 
   for (let i = 0; i < length; i++) {
     for (let j = i; j < count; j++) {
-      // console.log(str[j]);
       prod *= Number(str[j]);
     }
     store.push(prod);
@@ -24,5 +23,4 @@ const product = (str) => {
   return Math.max(...store);
 };
 
-console.log(product(number));
-// console.log(number);
+console.log(product(number)); // 23514624000
