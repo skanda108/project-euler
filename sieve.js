@@ -15,4 +15,4 @@ const eratos = (num) => {
   return primes;
 };
 
-console.log(eratos(121));
+console.log(eratos(200));
